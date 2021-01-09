@@ -10,8 +10,8 @@ import {useState, unstable_useTransition} from 'react';
 import {createFromReadableStream} from 'react-server-dom-webpack';
 
 import NotePreview from './NotePreview';
-import {useRefresh} from './Cache.client';
-import {useLocation} from './LocationContext.client';
+import {useRefresh} from '../Cache.client';
+import {useLocation} from '../LocationContext.client';
 
 export default function NoteEditor({noteId, initialTitle, initialBody}) {
   const refresh = useRefresh();

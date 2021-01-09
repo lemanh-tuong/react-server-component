@@ -8,7 +8,7 @@
 
 import {useState, useRef, useEffect, unstable_useTransition} from 'react';
 
-import {useLocation} from './LocationContext.client';
+import {useLocation} from '../LocationContext.client';
 
 export default function SidebarNote({id, title, children, expandedChildren}) {
   const [location, setLocation] = useLocation();
