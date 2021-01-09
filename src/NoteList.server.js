@@ -24,7 +24,7 @@ export default function NoteList({searchText}) {
 
   // Now let's see how the Suspense boundary above lets us not block on this.
   // fetch('http://localhost:4000/sleep/3000');
-
+    console.log(notes)
   return notes.length > 0 ? (
     <ul className="notes-list">
       {notes.map((note) => (
