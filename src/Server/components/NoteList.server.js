@@ -6,10 +6,9 @@
  *
  */
 
-import {fetch} from 'react-fetch';
 
-import {db} from '../../db.server';
-import SidebarNote from '../../SidebarNote';
+import {db} from '../db.server';
+import SidebarNote from '../../Client/components/SidebarNote';
 
 export default function NoteList({searchText}) {
   // const notes = fetch('http://localhost:4000/notes').json();
@@ -24,7 +23,7 @@ export default function NoteList({searchText}) {
 
   // Now let's see how the Suspense boundary above lets us not block on this.
   // fetch('http://localhost:4000/sleep/3000');
-    console.log(notes)
+  console.log(notes)
   return notes.length > 0 ? (
     <ul className="notes-list">
       {notes.map((note) => (

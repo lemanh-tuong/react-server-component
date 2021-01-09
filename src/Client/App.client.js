@@ -10,7 +10,7 @@ import {useState, Suspense} from 'react';
 import {ErrorBoundary} from 'react-error-boundary';
 
 import {useServerResponse} from './Cache.client';
-import {LocationContext} from './LocationContext.client';
+import {LocationContext} from './components/LocationContext.client';
 
 export default function Root({initialCache}) {
   return (

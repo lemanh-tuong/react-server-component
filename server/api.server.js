@@ -26,7 +26,7 @@ const {pipeToNodeWritable} = require('react-server-dom-webpack/writer');
 const path = require('path');
 const {Pool} = require('pg');
 const React = require('react');
-const ReactApp = require('../src/App.server').default;
+const ReactApp = require('../src/Server/App.server').default;
 
 // Don't keep credentials in the source tree in a real app!
 const pool = new Pool(require('../credentials'));

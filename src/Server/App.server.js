@@ -8,11 +8,11 @@
 
 import {Suspense} from 'react';
 
-import Note from './Server/Note.server';
-import NoteList from './Server/NoteList.server';
+import Note from './components/Note.server';
+import NoteList from './components/NoteList.server';
 import EditButton from '../Client/components/EditButton.client';
-import SearchField from '../SearchField.client';
-import NoteSkeleton from '../NoteSkeleton';
+import SearchField from '../Client/components/SearchField.client';
+import NoteSkeleton from '../Client/components/NoteSkeleton';
 import NoteListSkeleton from '../Client/components/NoteListSkeleton';
 
 export default function App({selectedId, isEditing, searchText}) {

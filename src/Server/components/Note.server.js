@@ -7,14 +7,11 @@
  */
 
 import {fetch} from 'react-fetch';
-import {readFile} from 'react-fs';
 import {format} from 'date-fns';
-import path from 'path';
 
-import {db} from '../../db.server';
 import NotePreview from '../../Client/components/NotePreview';
 import EditButton from '../../Client/components/EditButton.client';
-import NoteEditor from '../NoteEditor.client';
+import NoteEditor from '../../Client/components/NoteEditor.client';
 
 export default function Note({selectedId, isEditing}) {
   const note =

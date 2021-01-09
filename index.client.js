@@ -7,8 +7,8 @@
  */
 
 import {unstable_createRoot} from 'react-dom';
-import Root from './Root.client';
+import App from './src/Client/App.client';
 
 const initialCache = new Map();
 const root = unstable_createRoot(document.getElementById('root'));
-root.render(<Root initialCache={initialCache} />);
+root.render(<App initialCache={initialCache} />);
